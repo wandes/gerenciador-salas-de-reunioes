@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="row">
+        <header class="col-12">
+            <app-header></app-header>
+        </header>
+    </div>
+    <div>
+        <div class="row">
+            <nav class="col-1">
+                <app-nav></app-nav>
+            </nav>
+            <div class="col-11 content ">
+                <div class="row" style="background-color: #272626; height: 4rem;">
+                    <div class="col-3" style="text-align: left;  margin-top: 0.2rem; margin-left: 0.8rem;">
+                        <i class="bi bi-calendar4-week"><span class="margin-left05rem">Calendário</span></i>
+                    </div>
+                    <div class="col-4">
+                    </div>
+                    <div class="col-2">
+                        <a><i class="bi bi-camera-video" ><span class="margin-left05rem font-size1rem">Reunir
+                                    agora</span></i></a>
+                    </div>
+                    <div class="col-2">
+                        <a><i class="bi bi-plus" (click)="open()"><span class="margin-left05rem font-size1rem">Nova
+                                    reunião</span></i></a>
+                    </div>
+                </div>
+                <div class="row" style="background-color: #201d1d; height: 89%;">
+                    <div class="col-12">
+                        <router-outlet></router-outlet>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <app-footer></app-footer>
+        </div>
+    </div>
+</div>

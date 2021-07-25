@@ -1,0 +1,30 @@
+<div class="table-overflow">
+  <table class="table table-hover table-dark ">
+    <thead>
+      <tr>
+        <th scope="col">Data</th>
+        <th scope="col">Inicio</th>
+        <th scope="col">Fim</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Descrição</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody *ngIf="listRooms">
+      <tr *ngFor="let room of listRooms">
+        <td>{{ room.data | date }}</td>
+        <td>{{ room.starHour }}</td>
+        <td>{{ room.endHour }}</td>
+        <td>{{ room.name }}</td>
+        <td>{{ room.description }}</td>
+        <td >
+          <button type="button" (click)="update(room)" class="btn btn-primary">Editar</button>
+          <button type="button" class="btn btn-danger" (click)="delete(room.id)">Excluir</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div *ngIf="!listRooms || listRooms.length == 0" style="text-align: center;">
+    <label>Sem registros</label>
+  </div>
+</div>
