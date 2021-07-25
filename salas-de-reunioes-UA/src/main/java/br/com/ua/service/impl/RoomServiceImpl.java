@@ -1,6 +1,5 @@
-package br.com.ua.service;
+package br.com.ua.service.impl;
 
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
@@ -15,7 +14,7 @@ import br.com.ua.dto.response.RoomResponseDTO;
 import br.com.ua.exception.ResourceNotFoundException;
 import br.com.ua.model.Room;
 import br.com.ua.repository.RoomRepository;
-import br.com.ua.service.impl.RoomService;
+import br.com.ua.service.RoomService;
 import lombok.AllArgsConstructor;
 
 @Service

@@ -1,4 +1,4 @@
-package br.com.ua.service.impl;
+package br.com.ua.service;
 
 import java.util.List;
 

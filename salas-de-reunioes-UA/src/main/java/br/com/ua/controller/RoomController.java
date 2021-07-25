@@ -20,7 +20,7 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import br.com.ua.dto.request.RoomRequestDTO;
 import br.com.ua.dto.response.RoomResponseDTO;
 import br.com.ua.exception.ResourceNotFoundException;
-import br.com.ua.service.RoomServiceImpl;
+import br.com.ua.service.impl.RoomServiceImpl;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
